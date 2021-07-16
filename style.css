@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: seashell;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header .sticky {
+    padding: 10px 100px;
+    background-color: black;
+
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header li {
+    position: relative;
+    list-style: none;
+}
+header li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: seashell;
+    font-weight: 500px;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header .sticky .logo,
+header .sticky ul li a {
+    color: seashell;
+}
+img {
+    /* unused but necessary for inner images */
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+
+/*MISSION SECTION STYLES*/
+
+.mission-container {
+    display: flex;
+    position: relative;
+    top: 70px;
+    height: 100vh;
+    width: 1200px;
+    background-image: url(res/img-mission-background.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    margin: auto;
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 1200px){
+    .mission-container {
+        width: auto;
+    }
+
+    .mission-container h2, h4{
+        width: auto;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .mission-container {
+        top: 138px;
+    }
+    
+}
+
+.mission-container h2{
+    background-color: black;
+    width: 1200px;
+    text-align: center;
+    padding: 20px 0 5px 0;
+}
+
+.mission-container h4{
+    background-color: black;
+    width: 1200px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.mission-statement-container {
+    flex-shrink: 2;
+    color: seashell;
+}
+
+/*FEATURED TEAS SECTION STYLES*/
+
+.featured-container {
+    width: 1000px;
+    margin: 150px auto 90px auto;
+    position: relative;
+}
+
+.featured-statement {
+    text-align: center;
+    margin: 20px;
+    color: seashell;
+}
+
+.featured-statement h4 {
+    margin: 20px 0;
+    color: seashell;
+}
+
+.flexbox-center {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    display: block;
+}
+
+.img-container img{
+    height: 200px;
+    width: 300px;
+    flex-basis: auto;
+    margin: 10px;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+    color: seashell;
+}
+
+/*LOCATIONS SECTION STYLES*/
+
+.locations-container {
+    width: 1200px;
+    height: 100vh;
+    margin: auto;
+    background-image: url(res/img-locations-background.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    opacity: 0.9;
+
+}
+
+.locations-statement {
+    text-align: center;
+    width: 100%;
+    color: seashell;
+}
+
+.address-container {
+    width: 300px;
+    height: 250px;
+    margin: 30px 40px;
+    background-color: black;
+    opacity: 1;
+    text-align: center;
+    color: seashell;
+
+}
+
+.address-container h3 {
+    margin-top: 30px;
+}
+
+.address-container h4 {
+    margin-top: 25px;
+    font-weight: 400
+}
+
+/*CONTACT SECTION STYLES*/
+
+.contact-container {
+    text-align: center;
+    height: 200px;
+    width: auto;
+    color: seashell;
+}
+
+.contact-container h2 {
+    margin-top: 30px;
+}
+
+.contact-container h5, .contact-container h4 {
+    margin: 35px;
+}
+
+/*FOOTER STYLES*/
+
+footer h5{
+    margin: 20px;
+    float: left;
+    color: seashell;
+
+}
